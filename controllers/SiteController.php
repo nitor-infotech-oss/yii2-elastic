@@ -62,9 +62,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        // echo "sample phph code";
-        // $rsa = new Crypt_RSA();
-        // $rsa = new /phpseclib/Crypt/RSA();
         return $this->render('index');
     }
 
