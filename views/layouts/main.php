@@ -27,8 +27,6 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    
-
     <div class="container">
         <?= $content ?>
     </div>
@@ -41,6 +39,7 @@ AppAsset::register($this);
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
+
 
 <?php $this->endBody() ?>
 </body>

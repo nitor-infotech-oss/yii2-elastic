@@ -3,18 +3,20 @@
 namespace app\models;
 
 use Yii;
-use Yii\elasticsearch\ActiveRecord;
+use yii\elasticsearch\ActiveRecord;
 /**
  * Employees is the model behind Employee search.
  */
-class ContactForm extends ActiveRecord
+class Employees extends ActiveRecord
 {
     public function attributes()
     {
         return['fName','lName','nicName'];
     }
 
-    public function searchEmp(){
-        
+    public function searchEmpNames($searchTxt)
+    {
+        $empNames = Employees::find()->query(['query_string' => ['query' => '*'.$searchTxt.'*',"fields"=>["fName","lName","nicName"]]])->all();
+        return $empNames;
     }
 }

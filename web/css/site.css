@@ -96,6 +96,13 @@ a.desc:after {
     border: none;
 }
 
+td { 
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+}
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;

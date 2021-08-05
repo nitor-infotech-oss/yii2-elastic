@@ -13,8 +13,9 @@ $this->title = 'Yii2 Elastic implementation';
         <p class="lead"></p>
 
         <p>
-            <input type="text" id="txtSearch" style="width: 544px;" />
-            <div id="search_suggest"></div>
+            <input type="text" id="txtSearch" style="width: 544px;"/>
+            <div><button id="searchBtn" name="searchBtn" onclick="searchEmp();">SEARCH</button></div>
+            <div id="search_suggest"><p id="searchPara" style="margin-top: 20px;"></p></div>
         </p>
     </div>
 </div>
